@@ -1,0 +1,9 @@
+<form [formGroup]="form" (submit)="onSubmit()">
+	<label for="text">Text</label>
+	<input type="text" formControlName="text">
+	<label for="number">Number</label>
+	<input type="number" formControlName="number">
+	<label for="file">File</label>
+  <input (change)="onFileSelected($event)" type="file">
+	<button>Submit</button>
+</form>
